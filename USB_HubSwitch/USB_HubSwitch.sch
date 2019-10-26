@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:USB_HubSwitch-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -36,43 +37,36 @@ $EndComp
 $Comp
 L dk_USB-DVI-HDMI-Connectors:UE27AC54100 J5
 U 1 1 5DB3B81C
-P 13200 5800
-F 0 "J5" H 13097 5845 60  0000 R CNN
-F 1 "UE27AC54100" H 13097 5739 60  0000 R CNN
-F 2 "digikey-footprints:USB_A_Female_UE27AC54100" H 13400 6000 60  0001 L CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 13400 6100 60  0001 L CNN
-F 4 "UE27AC54100-ND" H 13400 6200 60  0001 L CNN "Digi-Key_PN"
-F 5 "UE27AC54100" H 13400 6300 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 13400 6400 60  0001 L CNN "Category"
-F 7 "USB, DVI, HDMI Connectors" H 13400 6500 60  0001 L CNN "Family"
-F 8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 13400 6600 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" H 13400 6700 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN RCPT USB2.0 TYPEA 4POS R/A" H 13400 6800 60  0001 L CNN "Description"
-F 11 "Amphenol ICC (Commercial Products)" H 13400 6900 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 13400 7000 60  0001 L CNN "Status"
-	1    13200 5800
-	-1   0    0    -1  
+P 13200 5700
+F 0 "J5" H 13097 5745 60  0000 R CNN
+F 1 "UE27AC54100" H 13097 5639 60  0000 R CNN
+F 2 "digikey-footprints:USB_A_Female_UE27AC54100" H 13400 5900 60  0001 L CNN
+F 3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 13400 6000 60  0001 L CNN
+F 4 "UE27AC54100-ND" H 13400 6100 60  0001 L CNN "Digi-Key_PN"
+F 5 "UE27AC54100" H 13400 6200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 13400 6300 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 13400 6400 60  0001 L CNN "Family"
+F 8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" H 13400 6500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" H 13400 6600 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 TYPEA 4POS R/A" H 13400 6700 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (Commercial Products)" H 13400 6800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 13400 6900 60  0001 L CNN "Status"
+	1    13200 5700
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	13075 6125 13075 6200
-Wire Wire Line
-	13075 6200 12800 6200
 Wire Wire Line
 	12800 6200 12800 5900
 Wire Wire Line
 	12800 5900 12900 5900
-Wire Wire Line
-	13075 6200 13075 6300
-Connection ~ 13075 6200
 $Comp
 L power:GNDD #PWR0101
 U 1 1 5DB41BC7
-P 13075 6300
-F 0 "#PWR0101" H 13075 6050 50  0001 C CNN
-F 1 "GNDD" H 13079 6145 50  0000 C CNN
-F 2 "" H 13075 6300 50  0001 C CNN
-F 3 "" H 13075 6300 50  0001 C CNN
-	1    13075 6300
+P 12800 6200
+F 0 "#PWR0101" H 12800 5950 50  0001 C CNN
+F 1 "GNDD" H 12804 6045 50  0000 C CNN
+F 2 "" H 12800 6200 50  0001 C CNN
+F 3 "" H 12800 6200 50  0001 C CNN
+	1    12800 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -857,4 +851,21 @@ Wire Wire Line
 	7200 1750 7200 3150
 Text Notes 7575 6300 0    59   ~ 12
 S = L, D=D1
+$Comp
+L power:GNDD #PWR?
+U 1 1 5DDBD562
+P 13425 5300
+F 0 "#PWR?" H 13425 5050 50  0001 C CNN
+F 1 "GNDD" H 13429 5145 50  0000 C CNN
+F 2 "" H 13425 5300 50  0001 C CNN
+F 3 "" H 13425 5300 50  0001 C CNN
+	1    13425 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13425 5300 13425 5225
+Wire Wire Line
+	13425 5225 13075 5225
+Wire Wire Line
+	13075 5225 13075 5375
 $EndSCHEMATC
