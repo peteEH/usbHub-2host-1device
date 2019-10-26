@@ -1,0 +1,321 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Analog_Switch_MAX40200AUK
+#
+DEF Analog_Switch_MAX40200AUK U 0 20 Y Y 1 F N
+F0 "U" -250 250 50 H V C CNN
+F1 "Analog_Switch_MAX40200AUK" 300 250 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-23-5" 0 500 50 H I C CNN
+F3 "" 0 500 50 H I C CNN
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -300 -200 300 200 1 1 10 f
+X VDD 1 -400 100 100 R 50 50 1 1 W
+X GND 2 0 -300 100 U 50 50 1 1 W
+X EN 3 -400 -100 100 R 50 50 1 1 I
+X NC 4 300 -100 100 L 50 50 1 1 N N
+X OUT 5 400 100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small_US
+#
+DEF Device_R_Small_US R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small_US" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 5 1 1 0 0 0 40 -15 0 -30 -40 -45 0 -60 N
+P 5 1 1 0 0 60 40 45 0 30 -40 15 0 0 N
+X ~ 1 0 100 40 D 50 50 1 1 P
+X ~ 2 0 -100 40 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Interface-Analog-Switches-Special-Purpose_TS3USB30EDGSR
+#
+DEF dk_Interface-Analog-Switches-Special-Purpose_TS3USB30EDGSR U 0 0 Y Y 1 F N
+F0 "U" -100 660 60 H V C CNN
+F1 "dk_Interface-Analog-Switches-Special-Purpose_TS3USB30EDGSR" 20 -640 60 H V L CNN
+F2 "digikey-footprints:MSOP-10_W3mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fts3usb30e" 200 300 60 H I L CNN
+F4 "296-25495-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "TS3USB30EDGSR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Interface - Analog Switches - Special Purpose" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fts3usb30e" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/TS3USB30EDGSR/296-25495-1-ND/2193089" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC USB SWITCH SGL 1X2 10MSOP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 110 10 10 0 1 0 N
+C 110 410 10 0 1 0 N
+S -150 610 150 -590 0 1 0 f
+P 2 0 1 0 -150 -90 -100 -90 N
+P 2 0 1 0 -150 310 -100 310 N
+P 2 0 1 0 -100 110 -150 110 N
+P 2 0 1 0 -100 510 -150 510 N
+P 2 0 1 0 -75 85 100 10 N
+P 2 0 1 0 -75 485 100 410 N
+P 2 0 1 0 120 10 150 10 N
+P 2 0 1 0 120 410 150 410 N
+P 4 0 1 0 -100 -90 -25 -90 -50 -65 -75 -90 F
+P 4 0 1 0 -100 110 -25 110 -50 85 -75 110 F
+P 4 0 1 0 -100 310 -25 310 -50 335 -75 310 F
+P 4 0 1 0 -100 510 -25 510 -50 485 -75 510 F
+X S 1 -350 -290 200 R 50 50 1 1 I
+X VCC 10 50 810 200 D 50 50 1 1 W
+X D1+ 2 -350 510 200 R 50 50 1 1 B
+X D2+ 3 -350 310 200 R 50 50 1 1 B
+X D+ 4 350 410 200 L 50 50 1 1 B
+X GND 5 -50 -790 200 U 50 50 1 1 W
+X D- 6 350 10 200 L 50 50 1 1 B
+X D2- 7 -350 -90 200 R 50 50 1 1 B
+X D1- 8 -350 110 200 R 50 50 1 1 B
+X ~OE 9 -350 -490 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# dk_PMIC-Voltage-Reference_LM4040D25FTA
+#
+DEF dk_PMIC-Voltage-Reference_LM4040D25FTA VR 0 0 Y Y 1 F N
+F0 "VR" -100 125 50 H V C CNN
+F1 "dk_PMIC-Voltage-Reference_LM4040D25FTA" -225 0 50 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 50 H I L CNN
+F3 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" 200 300 60 H I L CNN
+F4 "LM4040D25FCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LM4040D25FTA" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Reference" 200 700 60 H I L CNN "Family"
+F8 "https://www.diodes.com/assets/Datasheets/LM4040.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/diodes-incorporated/LM4040D25FTA/LM4040D25FCT-ND/1557756" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC VREF SHUNT 2.5V SOT23-3" 200 1000 60 H I L CNN "Description"
+F11 "Diodes Incorporated" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 0 1 0 -50 50 -75 25 N
+P 2 0 1 0 -50 50 50 50 N
+P 2 0 1 0 0 -150 0 -50 F
+P 2 0 1 0 0 50 0 150 N
+P 2 0 1 0 50 50 75 75 N
+P 2 0 1 0 100 0 25 0 N
+P 4 0 1 0 -50 -50 50 -50 0 50 -50 -50 F
+X ~ 1 0 200 150 D 50 50 1 1 P
+X ~ 2 0 -200 150 U 50 50 1 1 P
+X NC 3 200 0 100 L 50 50 1 1 U
+ENDDRAW
+ENDDEF
+#
+# dk_Rectangular-Connectors-Headers-Male-Pins_M20-9990246
+#
+DEF dk_Rectangular-Connectors-Headers-Male-Pins_M20-9990246 J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "dk_Rectangular-Connectors-Headers-Male-Pins_M20-9990246" 50 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x2_P2.54mm" 200 200 60 H I L CNN
+F3 "https://cdn.harwin.com/pdfs/M20-999.pdf" 200 300 60 H I L CNN
+F4 "952-2262-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "M20-9990246" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://cdn.harwin.com/pdfs/M20-999.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/harwin-inc/M20-9990246/952-2262-ND/3728226" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 2POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "Harwin Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 150 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Slide-Switches_EG1218
+#
+DEF dk_Slide-Switches_EG1218 S 0 0 Y Y 1 F N
+F0 "S" -150 90 50 H V C CNN
+F1 "dk_Slide-Switches_EG1218" 0 -210 50 H V C CNN
+F2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" 200 200 50 H I L CNN
+F3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" 200 300 60 H I L CNN
+F4 "EG1903-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "EG1218" 200 500 60 H I L CNN "MPN"
+F6 "Switches" 200 600 60 H I L CNN "Category"
+F7 "Slide Switches" 200 700 60 H I L CNN "Family"
+F8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "SWITCH SLIDE SPDT 200MA 30V" 200 1000 60 H I L CNN "Description"
+F11 "E-Switch" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C -90 0 14 0 1 0 F
+C 90 -100 14 0 1 0 F
+C 100 100 14 0 1 0 F
+P 2 0 1 0 -80 0 120 90 N
+X ~ 1 200 100 100 L 50 50 1 1 P
+X ~ 2 -200 0 100 R 50 50 1 1 P
+X ~ 3 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_USB-DVI-HDMI-Connectors_690-005-299-043
+#
+DEF dk_USB-DVI-HDMI-Connectors_690-005-299-043 J 0 40 Y Y 1 F N
+F0 "J" 350 1200 60 H V C CNN
+F1 "dk_USB-DVI-HDMI-Connectors_690-005-299-043" 269 586 60 V V C CNN
+F2 "digikey-footprints:USB_Mini_B_Female_690-005-299-043" 200 200 60 H I L CNN
+F3 "http://files.edac.net/690-005-299-043.pdf" 200 300 60 H I L CNN
+F4 "151-1206-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "690-005-299-043" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "USB, DVI, HDMI Connectors" 200 700 60 H I L CNN "Family"
+F8 "http://files.edac.net/690-005-299-043.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/edac-inc/690-005-299-043/151-1206-1-ND/4312192" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN RCPT USB2.0 MINI B SMD R/A" 200 1000 60 H I L CNN "Description"
+F11 "EDAC Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 585 475 495 525 0 1 0 F
+S 585 575 495 625 0 1 0 F
+S 585 675 495 725 0 1 0 F
+S 585 775 495 825 0 1 0 F
+S 585 875 495 925 0 1 0 F
+S 625 420 555 980 0 1 0 N
+S 675 525 625 475 0 1 0 F
+S 675 625 625 575 0 1 0 F
+S 675 725 625 675 0 1 0 F
+S 675 825 625 775 0 1 0 F
+S 675 925 625 875 0 1 0 F
+S 715 377 755 452 0 1 0 N
+S 715 1025 755 950 0 1 0 N
+P 2 0 1 0 425 920 425 480 N
+P 3 0 1 0 425 480 485 420 555 420 N
+P 3 0 1 0 425 920 485 980 555 980 N
+P 10 0 1 0 755 670 755 1125 627 1125 609 1122 599 1117 529 1061 516 1054 500 1050 375 1050 375 625 N
+P 10 0 1 0 755 732 755 277 627 277 609 280 599 285 529 341 516 348 500 352 375 352 375 777 N
+P 16 0 1 0 795 600 795 1140 795 1150 790 1160 780 1165 770 1165 611 1165 591 1162 578 1156 495 1090 360 1090 350 1090 340 1085 335 1075 335 1065 335 625 f
+P 16 0 1 0 795 802 795 262 795 252 790 242 780 237 770 237 611 237 591 240 578 246 495 312 360 312 350 312 340 317 335 327 335 337 335 777 f
+P 18 0 1 0 775 605 775 1120 775 1130 770 1140 760 1145 750 1145 614 1145 600 1143 588 1136 519 1081 504 1072 493 1070 380 1070 370 1070 360 1065 355 1055 355 1045 355 625 N
+P 18 0 1 0 775 797 775 282 775 272 770 262 760 257 750 257 614 257 600 259 588 266 519 321 504 330 493 332 380 332 370 332 360 337 355 347 355 357 355 777 N
+X ~ 1 900 900 105 L 50 50 1 1 P
+X ~ 2 900 800 105 L 50 50 1 1 P
+X ~ 3 900 700 105 L 50 50 1 1 P
+X ~ 4 900 600 105 L 50 50 1 1 P
+X ~ 5 900 500 105 L 50 50 1 1 P
+X ~ SH 400 200 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_USB-DVI-HDMI-Connectors_UE27AC54100
+#
+DEF dk_USB-DVI-HDMI-Connectors_UE27AC54100 J 0 40 Y Y 1 F N
+F0 "J" -50 375 60 H V C CNN
+F1 "dk_USB-DVI-HDMI-Connectors_UE27AC54100" -125 75 60 V V C CNN
+F2 "digikey-footprints:USB_A_Female_UE27AC54100" 200 200 60 H I L CNN
+F3 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" 200 300 60 H I L CNN
+F4 "UE27AC54100-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "UE27AC54100" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "USB, DVI, HDMI Connectors" 200 700 60 H I L CNN "Family"
+F8 "https://www.amphenolcanada.com/ProductSearch/drawings/AC/UE27ACX4X0X.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/amphenol-icc-commercial-products/UE27AC54100/UE27AC54100-ND/1972253" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN RCPT USB2.0 TYPEA 4POS R/A" 200 1000 60 H I L CNN "Description"
+F11 "Amphenol ICC (Commercial Products)" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 -175 -75 275 0 1 0 f
+S 50 250 0 -150 0 1 0 N
+S 100 -75 75 -125 0 1 0 F
+S 100 25 75 -25 0 1 0 F
+S 100 125 75 75 0 1 0 F
+S 100 175 75 225 0 1 0 F
+S 150 -200 -25 -225 0 1 0 f
+S 150 300 -25 325 0 1 0 f
+S 175 275 200 -175 0 1 0 f
+P 2 0 1 0 50 -150 75 -175 N
+P 2 0 1 0 50 250 75 275 N
+P 2 0 1 0 200 -100 100 -100 N
+P 2 0 1 0 200 0 100 0 N
+P 2 0 1 0 200 100 100 100 N
+P 2 0 1 0 200 200 100 200 N
+P 19 0 1 0 -25 250 -25 -150 -25 -157 -24 -162 -22 -169 -16 -174 -9 -175 -5 -174 -3 -175 -2 -174 0 -175 75 -175 75 275 0 275 -7 272 -16 267 -20 263 -23 259 -25 250 N
+P 25 0 1 0 -25 -200 150 -200 156 -198 164 -195 168 -189 172 -185 173 -179 175 -175 175 275 174 279 174 280 173 286 167 294 160 299 150 300 -25 300 -32 298 -44 289 -48 281 -50 275 -50 -175 -48 -184 -42 -193 -36 -198 -25 -200 f
+X ~ 1 300 -100 100 L 50 50 1 1 P
+X ~ 2 300 0 100 L 50 50 1 1 P
+X ~ 3 300 100 100 L 50 50 1 1 P
+X ~ 4 300 200 100 L 50 50 1 1 P
+X ~ SH 125 -325 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power_+4V
+#
+DEF power_+4V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+4V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +4V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+5VD
+#
+DEF power_+5VD #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5VD" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5VD 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDD
+#
+DEF power_GNDD #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDD" 0 -125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -60 50 -80 0 1 10 F
+P 2 0 1 0 0 0 0 -60 N
+X GNDD 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
